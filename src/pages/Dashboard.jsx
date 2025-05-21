@@ -1,16 +1,15 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../contexts/AuthContext';
 
-const Dashboard = () => {
+export default function Dashboard() {
   const { user, logout } = useContext(AuthContext);
 
   return (
-    <div>
-      <h2>Dashboard</h2>
-      <p>Bem-vindo, {user.name} ({user.role})</p>
+    <div style={{ padding: '2rem' }}>
+      <h2>Bem-vindo, {user?.name}</h2>
+      <p>Email: {user?.email}</p>
+      <p>Função: {user?.role}</p>
       <button onClick={logout}>Sair</button>
     </div>
   );
-};
-
-export default Dashboard;
+}
