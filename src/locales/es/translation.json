@@ -1,0 +1,8 @@
+{
+  "login": {
+    "title": "Acceso",
+    "email": "Correo",
+    "password": "Contrase\u00f1a",
+    "submit": "Ingresar"
+  }
+}
